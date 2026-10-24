@@ -32,8 +32,11 @@ Review, change or remove that behavior before competing.
 
 ## What is the bot deciding?
 
-Imagine a stock has a buying price of $99.90 and a selling price of $100.10.
-Your bot also gets a forecast suggesting its price may rise. It can buy, wait,
+Suppose the highest offer to buy a stock is $99.90 (the **bid**), and the
+cheapest seller asks $100.10 (the **ask**). Buying immediately costs $100.10;
+selling immediately gets you $99.90. The gap is the **spread**.
+
+Now your bot gets a forecast suggesting the price may rise. It can buy, wait,
 place an order at a different price, or reduce an existing position.
 
 A forecast is a clue, not a future price you can trust completely. A good bot
