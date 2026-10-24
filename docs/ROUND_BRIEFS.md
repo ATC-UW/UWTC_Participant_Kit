@@ -66,7 +66,9 @@ next round. You can leave futures locked and trade the other assets.
 **Available:** stocks, both funds, optional futures, and a signal auction.
 Research purchases are not active.
 
-**Auction:** up to **two teams** win access to better signals. Each winner pays
+**Auction:** the **top half of teams** can win access to better signals,
+rounded down with a minimum of one winner. The exact count is based on that
+round’s roster and shown in the dashboard before the start. Each winner pays
 the highest losing bid, or the reserve if higher. The current reserve is $0
 and maximum bid is $50,000. Bids close at the end of the **20-second opening
 period**. Your last accepted bid counts.

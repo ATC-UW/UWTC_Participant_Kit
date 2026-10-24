@@ -61,7 +61,8 @@ optional purchases and current costs.
   auction → research → combined final. The original scenario IDs are
   **1, 2, 3, 4, 6, 9, 12**.
 - The number of contestant teams is determined by registrations. Premium
-  auction capacity and payment rules appear in the round preview. The final does not enable the
+  auctions offer access to the top half of teams (rounded down, minimum one);
+  the exact capacity and payment rule appear in the round preview. The final does not enable the
   separate futures-signal shop.
 - Round profit includes fees and purchases. **Overall scoring uses round-rank
   points: N − rank + 1, where N is the number of teams in that round.**
