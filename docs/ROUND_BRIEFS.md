@@ -110,8 +110,9 @@ A focused strategy is fine. You do not need a new bot or every available feature
 
 - Fresh **$100,000** virtual starting cash and no holdings each round.
 - A **20-second opening period**, then **15 simulated days × 40 seconds** of
-  trading. A **10-minute review break** separates rounds. Organizers control
-  the next start; the timer is not an automatic start button.
+  trading. A **10-minute review break** separates rounds. The next scored
+  round starts automatically at the end of that break unless the organizer
+  holds it. Upload your selected version before the countdown expires.
 - Your selected Python file carries over, unless you successfully upload a
   replacement. Replacing it during a round keeps your exchange account but
   restarts Python variables.

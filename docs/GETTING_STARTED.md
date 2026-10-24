@@ -92,8 +92,9 @@ organizer starts the round. There is a 20-second opening period, followed by
 Between rounds, you have a **10-minute review break**. Download your results,
 change your bot, and upload the next version. A fresh round resets the account;
 your results from previous rounds still count toward the overall ranking.
-The organizer controls the next start, so the break timer is not an automatic
-start button.
+Automatic progression is now enabled: the next scored round starts when the
+10-minute review countdown ends, unless the organizer holds the start. Finish
+your uploads before the countdown expires and watch organizer announcements.
 
 | Round | New idea |
 | --- | --- |
