@@ -174,3 +174,20 @@ The SDK also has a **remote runner** for teams explicitly registered to run
 bots on their own computers. This is a different execution mode. For this
 hosted event, upload your file; do not run a second trading connection alongside
 it, because the second connection replaces the first.
+
+## Download a teammate's uploaded bot
+
+While signed in, use **Download current bot** in the upload section. This
+downloads your team's latest accepted `competitor_strategy.py` using your
+existing login. It does not replace or restart the bot. Coordinate edits and
+choose one uploader so teammates do not overwrite each other's changes.
+
+The equivalent API call is:
+
+```sh
+curl --fail-with-body -H "X-API-Key: $UWTC_API_KEY" \
+  -o competitor_strategy.py \
+  https://competition.atcuw.org/team/strategy/download
+```
+
+This saves over a file with that name, so keep any local changes separately.
