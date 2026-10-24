@@ -8,7 +8,7 @@ documented.
 
 ## Quick start
 
-For hosted competition teams, open `https://EXCHANGE_HOST/dashboard` and sign
+For hosted competition teams, open `https://competition.atcuw.org/dashboard` and sign
 in with your team API key. Upload `competitor_strategy.py`, check the selected
 version and bot connection, and review your account and runtime log. Your key
 stays only in the current tab's memory; sign in again after a refresh. Opening
@@ -24,7 +24,7 @@ execution. Do not run it alongside your hosted bot.
 
 ```bash
 pip install -r requirements-sdk.txt        # websockets only; numpy/pandas are optional
-python -m uwtc.sdk.run competitor_strategy.py --url wss://EXCHANGE_HOST/ws --key YOUR_API_KEY
+python -m uwtc.sdk.run competitor_strategy.py --url wss://competition.atcuw.org/ws --key YOUR_API_KEY
 ```
 
 `--url` and `--key` can also come from the `UWTC_URL` and `UWTC_API_KEY`
@@ -173,8 +173,8 @@ which has no internet access, a read-only filesystem, limited memory and CPU,
 and only the SDK, numpy and pandas installed:
 
 ```bash
-curl -H "X-API-Key: $UWTC_API_KEY" -F file=@competitor_strategy.py https://EXCHANGE_HOST/team/strategy
-curl -H "X-API-Key: $UWTC_API_KEY" https://EXCHANGE_HOST/team/strategy      # what is installed
+curl -H "X-API-Key: $UWTC_API_KEY" -F file=@competitor_strategy.py https://competition.atcuw.org/team/strategy
+curl -H "X-API-Key: $UWTC_API_KEY" https://competition.atcuw.org/team/strategy      # what is installed
 ```
 
 The file must be UTF-8, under 256 KB, and define `class Strategy`. During a

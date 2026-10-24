@@ -8,7 +8,7 @@ key separately. No competition credentials belong in this repository.
 ## Start here: hosted competition
 
 1. Clone this repository or download its ZIP from GitHub.
-2. Open the organizer's dashboard URL in your browser and sign in with your
+2. Open [the competition dashboard](https://competition.atcuw.org/dashboard) in your browser and sign in with your
    **team API key**. GitHub access and the competition key are separate.
 3. Open `competitor_strategy.py` in your editor. It already defines a working
    `Strategy` class; customize it rather than writing exchange plumbing.
@@ -75,7 +75,7 @@ The SDK also supports running a bot on your own machine **when the organizer
 registers your team for remote execution**:
 
 ```bash
-python -m uwtc.sdk.run competitor_strategy.py --url wss://EXCHANGE_HOST/ws
+python -m uwtc.sdk.run competitor_strategy.py --url wss://competition.atcuw.org/ws
 ```
 
 Set `UWTC_API_KEY` in your local environment before using that command. Do not
