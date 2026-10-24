@@ -73,6 +73,16 @@ N−1 for second, down to 1 for last. The team count comes from that round’s r
 Your points across all seven rounds determine the overall ranking; every round
 counts equally. Read [scoring and tie rules](SCORING.md).
 
+## Practice before the competition
+
+The organizer can run an **unscored practice round** using the stock market.
+Upload the unchanged starter first, then check trades, positions, and bot output
+while practice runs. You can edit and upload improvements during practice.
+The dashboard labels practice clearly. Practice earns no competition points
+and does not use up round 1. Your uploaded file carries over; cash, positions,
+orders, and bot variables start fresh when scored round 1 begins.
+The organizer starts the scored competition separately after everyone is ready.
+
 ## What happens in a round?
 
 You start each round with **$100,000 in virtual cash and no holdings**. The
