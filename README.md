@@ -1,7 +1,7 @@
 # UWTC Case 2 — Participant Starter Kit
 
 Write a Python trading bot for the UW Algorithmic Trading Club competition.
-This private repository contains the participant SDK, a working starter strategy,
+This public repository contains the participant SDK, a working starter strategy,
 and the team guide. Your organizer supplies the exchange URL and your team's API
 key separately. No competition credentials belong in this repository.
 
@@ -92,7 +92,7 @@ Read [the team guide](docs/TEAM_GUIDE.md) for callbacks, signals, instruments,
 order types, limits, fees and reconnect behavior. Prices and cash in the SDK are
 **integer cents**: $101.25 is `10125`.
 
-A private repository is not a private strategy workspace between contestants:
-anyone granted access can read its branches. Keep team-specific strategies in
+This public starter kit is shared by every contestant:
+anyone can read its branches. Keep team-specific strategies in
 your team's own private repository or local working copy. Do not push strategies
 or API keys into a shared participant repository.
