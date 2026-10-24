@@ -49,6 +49,10 @@ selected version.
 
 ## Competition format
 
+Read [the seven round briefs](docs/ROUND_BRIEFS.md) before the event. During a
+break, the dashboard previews what is coming next, with available assets,
+optional purchases and current costs.
+
 - Seven rounds, each with 10 minutes of trading plus a 20-second pre-open.
 - Fifteen simulated trading days of 40 seconds per round.
 - Ten-minute review/update breaks between rounds.

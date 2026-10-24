@@ -92,7 +92,8 @@ start button.
 | 6 | Research spending to improve future forecasts. Weigh the benefit against its cost. |
 | 7 | A combined final. Use the parts that fit your strategy. |
 
-The [team guide](TEAM_GUIDE.md) explains the exact assets, fees, limits and SDK
+Read [the round briefs](ROUND_BRIEFS.md) for what changes and what to prepare
+before each start. The [team guide](TEAM_GUIDE.md) explains the exact assets, fees, limits and SDK
 methods. The dashboard explains the current round as you go.
 
 ## Change one thing at a time
