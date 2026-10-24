@@ -1,0 +1,3 @@
+# Everything a team needs to run competitor_strategy.py against the exchange.
+# Install with:  pip install -r requirements-sdk.txt
+websockets>=12.0
