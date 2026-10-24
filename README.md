@@ -1,31 +1,51 @@
 # UWTC Case 2 — Participant Starter Kit
 
-Write a Python trading bot for the UW Algorithmic Trading Club competition.
-This public repository contains the participant SDK, a working starter strategy,
-and the team guide. Your organizer supplies the exchange URL and your team's API
-key separately. No competition credentials belong in this repository.
+Build a Python bot that buys and sells in a simulated market. All money is
+virtual. We run your uploaded code on our server; you focus on its decisions.
+Your goal is to earn profit after trading costs across seven rounds.
 
-## Start here: hosted competition
+**New to trading? Start with [Your first trading bot](docs/GETTING_STARTED.md).**
+It explains the game, dashboard, first upload and how to use AI to understand
+the starter code. You can get started without installing Python or setting up
+a server.
 
-1. Clone this repository or download its ZIP from GitHub.
-2. Open [the competition dashboard](https://competition.atcuw.org/dashboard) in your browser and sign in with your
-   **team API key**. GitHub access and the competition key are separate.
-3. Open `competitor_strategy.py` in your editor. It already defines a working
-   `Strategy` class; customize it rather than writing exchange plumbing.
-4. Upload that file using **Choose Python strategy → Upload strategy** on the
-   dashboard. Confirm the selected version, then check the bot connection and
-   runtime log when the organizer starts a round.
-5. Monitor your private PnL, positions and orders. Review exports between rounds.
+## Get your first bot running
 
-The bot runs on the organizer's server, so your laptop does not need to stay
-connected for the uploaded bot to trade. The hosted environment includes the SDK,
-NumPy and pandas and has no internet access. Keep the strategy self-contained:
-only the uploaded Python file is transferred, not other files in your checkout.
+1. Get your **team key** from the organizers, sent to your team's contact email.
+2. Download this repository (**Code → Download ZIP**) and unzip it, or clone it.
+   This repo is public; you do not need a GitHub invitation.
+3. Open [your team dashboard](https://competition.atcuw.org/dashboard) and sign in.
+4. Choose `competitor_strategy.py`, click **Upload bot**, and read the confirmation.
+   The example works as-is; edit its `Strategy` class when you are ready.
+5. When the organizer starts a round, check **Your bot: Running** and watch your
+   profit and completed trades. If it stops, read **Bot output and errors**.
 
-**Starter behavior to review:** the template automatically bids **$5,000** in
-premium-signal auctions. Change or remove that bid to match your own valuation.
-The starter follows stock signals; futures, research and other mechanics require
-additional strategy decisions.
+A saved file is ready for the next round; it is not trading until the round
+starts. Your uploaded bot keeps running if you close the page or disconnect.
+The server includes the SDK, NumPy and pandas, but no internet access. Only the
+one Python file is uploaded, so keep your strategy self-contained.
+
+**Read before competing:** the starter automatically submits a **$5,000
+virtual-money bid** for better signals in auction rounds. You can change or
+remove that bid. The starter is a working example, not a promise of profit.
+
+## Choose how to upload
+
+- **Browser:** use [the dashboard](https://competition.atcuw.org/dashboard).
+  This is the easiest first step.
+- **Terminal or script:** use the same [upload API](docs/TEAM_GUIDE.md#hosted-execution-optional).
+  Set `UWTC_API_KEY` to the key from your team email, then run:
+
+```bash
+curl --fail-with-body \
+  -H "X-API-Key: $UWTC_API_KEY" \
+  -F "file=@competitor_strategy.py" \
+  https://competition.atcuw.org/team/strategy
+```
+
+Treat the key like a password. Keep it within your team and out of Git and AI
+prompts. Coordinate uploads: the last successful upload becomes your team's
+selected version.
 
 ## Competition format
 

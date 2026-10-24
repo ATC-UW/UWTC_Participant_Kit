@@ -1,5 +1,7 @@
 # UWTC Case 2 - Team Guide
 
+**First time here? Read [Your first trading bot](GETTING_STARTED.md) for a plain-language introduction and first-upload checklist.** This page is the detailed rules and SDK reference.
+
 You write one Python class, `Strategy`, in `competitor_strategy.py`. The SDK
 connects it to the exchange, keeps your view of the market up to date and calls
 your methods when things happen. Everything below is what the exchange
@@ -47,7 +49,7 @@ for downloading your own round exports.
   leveraged ETF, futures, premium-signal auction, research, and the combined final.
 * Each round starts with fresh cash (`starting_cash` in `round_start`) and no
   positions. Round results are independent.
-* **Score = PnL**: `cash + sum(position x close mark) - starting cash` at the end
+* **Score = profit / loss (PnL)**: `cash + sum(position x close mark) - starting cash` at the end
   of the round. Mechanic purchases, fees and futures unlocks are all paid from
   cash, so they count against you.
 * Rounds introduce products and mechanics progressively. `round_start.mechanics`
@@ -167,14 +169,16 @@ and logged, and your bot keeps running.
 
 ## Hosted execution (optional)
 
+For this event, teams use hosted execution by default. Your Python code runs on the competition server. Set `UWTC_API_KEY` in your terminal to the key from your team email; keep it private.
+
 If your team is registered as hosted, you can upload `competitor_strategy.py`
 between rounds or to replace a running bot mid-round. The exchange runs it in an isolated container,
 which has no internet access, a read-only filesystem, limited memory and CPU,
 and only the SDK, numpy and pandas installed:
 
 ```bash
-curl -H "X-API-Key: $UWTC_API_KEY" -F file=@competitor_strategy.py https://competition.atcuw.org/team/strategy
-curl -H "X-API-Key: $UWTC_API_KEY" https://competition.atcuw.org/team/strategy      # what is installed
+curl --fail-with-body -H "X-API-Key: $UWTC_API_KEY" -F file=@competitor_strategy.py https://competition.atcuw.org/team/strategy
+curl --fail-with-body -H "X-API-Key: $UWTC_API_KEY" https://competition.atcuw.org/team/strategy      # what is installed
 ```
 
 The file must be UTF-8, under 256 KB, and define `class Strategy`. During a
