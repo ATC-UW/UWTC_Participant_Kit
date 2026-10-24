@@ -60,10 +60,13 @@ optional purchases and current costs.
 - Progression: stocks → index ETF → leveraged ETF → futures → premium-signal
   auction → research → combined final. The original scenario IDs are
   **1, 2, 3, 4, 6, 9, 12**.
-- Five contestant teams; premium auctions have **two winners**, each paying the
-  third-highest bid under the uniform-price rule. The final does not enable the
+- The number of contestant teams is determined by registrations. Premium
+  auction capacity and payment rules appear in the round preview. The final does not enable the
   separate futures-signal shop.
-- Round PnL includes fees and purchases. Current overall scoring sums net PnL.
+- Round profit includes fees and purchases. **Overall scoring uses round-rank
+  points: N − rank + 1, where N is the number of teams in that round.**
+  All seven rounds count equally.
+  See [scoring and tie rules](docs/SCORING.md).
 - During trading, the dashboard shows rivals' ranks delayed by at least 15
   seconds. Rival live PnL, positions, orders and logs stay private. Final settled
   PnL becomes visible after round close.

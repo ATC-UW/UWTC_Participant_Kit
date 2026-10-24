@@ -49,9 +49,13 @@ for downloading your own round exports.
   leveraged ETF, futures, premium-signal auction, research, and the combined final.
 * Each round starts with fresh cash (`starting_cash` in `round_start`) and no
   positions. Round results are independent.
-* **Score = profit / loss (PnL)**: `cash + sum(position x close mark) - starting cash` at the end
+* **Round ranking uses profit / loss (PnL)**: `cash + sum(position x close mark) - starting cash` at the end
   of the round. Mechanic purchases, fees and futures unlocks are all paid from
   cash, so they count against you.
+* **Overall scoring uses round-rank points: N − rank + 1**, where N is the
+  number of teams in that round. First earns N points; last earns 1 point. All seven rounds count equally. Equal round profits
+  share rank and points; equal overall points use total profit, then share place
+  if still tied. See [the full scoring rules](SCORING.md).
 * Rounds introduce products and mechanics progressively. `round_start.mechanics`
   tells you what is active in the current round.
 

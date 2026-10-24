@@ -118,8 +118,10 @@ A focused strategy is fine. You do not need a new bot or every available feature
   **25 messages per simulated second**. See the dashboard for per-asset exceptions.
 - A trade against an existing order costs **$0.01 per unit**. If someone trades
   with your waiting order, the standard fee is **$0**. Paid upgrades are extra.
-- Current overall scoring adds final profits after costs across completed
-  rounds. Live profit is provisional until official close values are applied.
+- Overall scoring adds round-rank points: **N − rank + 1**, using the actual
+  number of teams N in each round.
+  All seven rounds count equally. Round ranks use final profit after costs;
+  live profit is provisional. Read [scoring and tie rules](SCORING.md).
 
 For exact SDK methods and order-rejection reasons, use the
 [team guide](TEAM_GUIDE.md). For the first upload and common problems, use

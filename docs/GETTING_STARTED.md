@@ -67,8 +67,11 @@ every feature to participate.
 | Team rankings | Other teams' ranks are delayed by at least 15 seconds during trading. Their live profit and holdings stay private. Final round profit becomes visible afterward. |
 
 Live profit is an estimate. At the round's end, the exchange calculates the
-final result using the official closing values. Current overall scoring adds
-your final profits after costs across completed rounds.
+final result using the official closing values. Your final profit determines
+your rank that round. With N teams, you earn N − rank + 1 points: N for first,
+N−1 for second, down to 1 for last. The team count comes from that round’s roster.
+Your points across all seven rounds determine the overall ranking; every round
+counts equally. Read [scoring and tie rules](SCORING.md).
 
 ## What happens in a round?
 
